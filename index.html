@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "theme" content= "FEFFF0" />
+    <meta charset="UTF-8" />
+    <title>Aisha's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome for icons-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+        }
+        .top-left-image {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- header / Navbar -->
+    <img src="p2.png" alt="Top Left" class="top-left-image" />
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"> 
+                <img src="p1.png" alt="Logo" class="logo-img" />
+                <h2 class="logo-text">Aisha</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"> 
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item"> 
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item"> 
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item"> 
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+
+         <img src="p5.png" alt="Image" class="image5" />
+
+<main>
+
+   
+    <section class="main">
+        
+        <img src="p3.png" alt="Image" class="image3" />
+
+            <div>
+                <h2> Hello </h2>
+                <div class="container">
+                 <span class="text - first-text">I'm  </span>
+                 <span class="text - sec-text">Aisha</span>
+            
+                </div>
+            <script>
+                const text = document.querySelector(".sec-text");
+
+                const textArray = ["Aisha", "a CS Student", "a Programmer", "an AI Developer"];
+                 let index = 0;
+
+                const textLoad = () => {
+                text.textContent = textArray[index];
+                index = (index + 1) % textArray.length; 
+            };
+
+                textLoad(); 
+                setInterval(textLoad, 4000); 
+            </script>
+
+
+                <a href="#" class="main-btn">Resume</a>
+                <div class ="social-links">
+                    <a href="https://www.linkedin.com/in/aisha-ib-902332286"><i class="fa-brands fa-linkedin-in" style="color: #F3A468"></i></a>
+                    <a href="https://github.com/Aisha-ib"><i class="fa-brands fa-github" style="color: #F3A468"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter" style="color: #F3A468;"></i></a>
+
+
+                </div>
+            </div>
+
+    </section>
+</main>
+
+<section class="about" id = "about">
+
+    <img src="about.png" alt="Image" class="img-about" />
+       <div class = "about-me">
+            <div class = "me">
+                <p>Hey 👋🏼 I am a Computer Science student at King Saud University in Riyadh, Saudi Arabia. 
+        I'm currently in my final year and passionate about everything related to Artificial Intelligence 
+        and Machine Learning. 
+        I love learning how smart systems work and how technology can be used to solve real-world problems. 
+</p>
+            </div>
+
+</section>
+
+
+
+<section class ="skills" id = "skills">
+
+    <img src="skills.png" alt="Image" class="img-skills" />
+    <h3 class ="over">Move your cursor over a skill to see proficiency level</h3>
+<div class="skills-grid">
+
+  <div class="skill">
+    <img src="swift.png" alt="Swift">
+    <span class="percentage">60%</span>
+</div>
+  <div class="skill">
+    <img src="c.png" alt="C Language">
+    <span class="percentage">90%</span>
+</div>
+  <div class="skill">
+    <img src="mysql.png" alt="MySQL">
+    <span class="percentage">50%</span>
+</div>
+  <div class="skill">
+    <img src="java.png" alt="Java">
+    <span class="percentage">90%</span>
+</div>
+  <div class="skill">
+    <img src="matlab.png" alt="MATLAB">
+    <span class="percentage">40%</span>
+</div>
+  <div class="skill">
+    <img src="html5.png" alt="HTML5">
+    <span class="percentage">60%</span>
+</div>
+  <div class="skill">
+    <img src="python.png" alt="Python">
+    <span class="percentage">70%</span>
+</div>
+  <div class="skill">
+    <img src="latex.png" alt="LaTeX">
+    <span class="percentage">55%</span>
+</div>
+  <div class="skill">
+    <img src="jupyter.png" alt="Jupyter">
+    <span class="percentage">80%</span>
+</div>
+  <div class="skill">
+    <img src="aws.png" alt="AWS">
+    <span class="percentage">45%</span>
+</div>
+  <div class="skill">
+    <img src="tensorflow.png" alt="TensorFlow">
+    <span class="percentage">50%</span>
+</div>
+  <div class="skill">
+    <img src="pytorch.png" alt="PyTorch">
+    <span class="percentage">60%</span>
+</div>
+  <div class="skill">
+    <img src="css.png" alt="CSS">
+    <span class="percentage">65%</span>
+</div>
+  <div class="skill">
+    <img src="js.png" alt="JavaScript">
+    <span class="percentage">60%</span>
+</div>
+  <div class="skill">
+    <img src="figma.png" alt="Figma">
+    <span class="percentage">65%</span>
+</div>
+  <div class="skill">
+    <img src="re.png" alt="RE">
+    <span class="percentage">30%</span>
+</div>
+
+</div>
+
+  
+
+
+
+
+
+
+    </section>
+   
+
+ <section class="projects"  id = "projects">
+
+    <img src="projects.png" alt="Image" class="img-projects" /> 
+    
+<div class="swiper">
+
+      <div class="swiper-wrapper">
+  <!-- slide 1-->
+    <div class="swiper-slide">
+        <div class = "card">
+            <div class = "icon">
+                <img src="icon1.png" alt="Project 1 Icon" class="icon" />
+        </div>
+            <div class = "info">
+                <h3>Recipe Generator</h3>
+                <p>AI-powered tool that uses a 
+                    Large Language Model to generate 
+                    personalized cooking recipes with nutritional info.</p>
+            </div>
+        </div>
+    </div>
+    <!--slide 2-->
+    <div class="swiper-slide">
+         <div class = "card">
+            <div class = "icon">
+                <img src="icon2.png" alt="Project 1 Icon" class="icon" />
+        </div>
+            <div class = "info">
+                <h3>Portfolio Website</h3>
+                <p> I developed the website you're currently looking at to improve my skills in HTML, CSS, and JavaScript. I started with a simple project, and I plan to keep growing and improving it over time.
+ </p>
+            </div>
+        </div>
+    </div>
+
+    <!--slide 3-->
+    <div class="swiper-slide">
+         <div class = "card">
+            <div class = "icon">
+                <img src="icon1.png" alt="Project 1 Icon" class="icon" />
+        </div>
+            <div class = "info">
+                <h3>AI-Powered Recipe Generator</h3>
+                <p>TAI-powered tool that uses a 
+                    Large Language Model to generate 
+                    personalized cooking recipes with nutritional info.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class = "card">
+            <div class = "icon">
+                <img src="icon1.png" alt="Project 1 Icon" class="icon" />
+        </div>
+            <div class = "info">
+                <h3>Recipe Generator</h3>
+                <p>AI-powered tool that uses a 
+                    Large Language Model to generate 
+                    personalized cooking recipes with nutritional info.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+</div>
+
+</section>
+
+<section class = "contact" id ="contact">
+    <img src="contact.png" alt="Image" class="img-contact" /> 
+
+    <div class="contact-ino">
+
+       <div class="email">
+         <i class="fa-solid fa-envelope"style="color: #F3A468"></i>
+           <a href="mailto:Aishamohamed.ib@outlook.com">Aishamohamed.ib@outlook.com</a>
+       </div>
+
+       <div class="phone">
+          <i class="fa-solid fa-phone"style="color: #F3A468"></i>
+           <a href="tel:+966551298562">0551298562</a>
+       </div>
+
+  <div class="in">
+    <i class="fa-brands fa-linkedin-in" style="color: #F3A468"></i>
+    <a href="https://www.linkedin.com/in/aisha-ib-902332286" target="_blank">@Aisha-ib</a>
+
+  </div>
+
+  <div class="loc">
+    <i class="fa-solid fa-location-dot"style="color: #F3A468"></i>
+    <a href="#" > Riyadh, Saudi Arabia</a>
+  </div>
+
+</div>
+        
+</section>
+
+
+<footer class = "footer">
+
+        <p class ="footer-title"> © Aisha</p>    
+
+              <div class ="social-links">
+                    <a href="https://www.linkedin.com/in/aisha-ib-902332286"><i class="fa-brands fa-linkedin-in" style="color: #F3A468"></i></a>
+                    <a href="https://github.com/Aisha-ib"><i class="fa-brands fa-github" style="color: #F3A468"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter" style="color: #F3A468;"></i></a>
+
+
+                </div>
+
+
+
+            </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
